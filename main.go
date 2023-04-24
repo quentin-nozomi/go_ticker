@@ -49,4 +49,7 @@ func main() {
 	time.Sleep(4 * time.Second) // simulate runtime
 
 	quit <- true
+	barrier.Wait()
+
+	fmt.Println("done")
 }

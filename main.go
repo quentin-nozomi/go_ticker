@@ -14,7 +14,7 @@ type remoteUpdate struct {
 func main() {
 	quit := make(chan bool)
 
-	update := remoteUpdate{}
+	update := remoteUpdate{} // not thread safe for simplicity of example
 
 	barrier := sync.WaitGroup{}
 	go func(barrier *sync.WaitGroup) {

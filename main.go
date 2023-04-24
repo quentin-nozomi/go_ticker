@@ -30,7 +30,6 @@ func main() {
 					ticker = time.NewTicker(update.freq)
 				} else {
 					fmt.Println("ticking")
-
 				}
 			case <-quit:
 				ticker.Stop()

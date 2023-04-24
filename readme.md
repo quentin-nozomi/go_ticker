@@ -1,0 +1,1 @@
+Ticker update example
